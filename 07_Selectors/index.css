@@ -76,7 +76,15 @@ a:hover {
 a:visited {
     color: black;
 }
+/* FIRST h5 on the page */
+h5:first-of-type {
+    font-weight: bold;
+}
 
+/* LAST h5 on the page */
+h5:last-of-type {
+    text-decoration: underline;
+}
 /* Attribute selector
 Can use: 
     ^=attributes that START WITH that value
