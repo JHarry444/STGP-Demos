@@ -48,6 +48,11 @@ h4~ul {
     border: 1px solid black;
 }
 
+/* Selects every li EXCEPT the 1st child */
+ol > li:not(:first-child) {
+    font-weight: bold;
+}
+
 ul > li:first-child, ul > li:last-child {
     font-weight: bold;
 }
