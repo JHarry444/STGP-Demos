@@ -1,0 +1,79 @@
+h3 {
+    color: pink;
+}
+
+#firstHeading {
+    color: green;
+}
+
+.oddHeading {
+    color: orange;
+}
+
+h1 {
+    color: purple;
+}
+/* Last rule wins */
+h1 {
+    color:yellow;
+}
+
+#inline {
+    color: brown;
+}
+
+
+#inheritance {
+    color: aqua;
+}
+
+/* only p that are in divs */
+/* div p {
+    text-decoration: underline;
+} */
+section#relational p {
+    text-decoration: underline;
+}
+
+/* > direct child */
+section#relational > p {
+    text-decoration: overline;
+}
+/* p NEXT TO an h5 */
+section#relational > h5 + p {
+    text-decoration: line-through;
+}
+
+ul > li:first-child, ul > li:last-child {
+    font-weight: bold;
+}
+
+ul > li:nth-child(even) {
+    color: red;
+}
+
+ul > li:nth-child(3) {
+    color: blue;
+}
+
+a:link {
+    color: red;
+}
+
+a:hover {
+    color: green;
+}
+
+a:visited {
+    color: black;
+}
+
+/* Attribute selector
+Can use: 
+    ^=attributes that START WITH that value
+    $=attributes that END WITH that value
+    *=attributes that CONTAINS that value
+*/
+input[name="inputName"] {
+    background-color: purple;
+}
