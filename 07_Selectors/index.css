@@ -39,9 +39,13 @@ section#relational p {
 section#relational > p {
     text-decoration: overline;
 }
-/* p NEXT TO an h5 */
+/* p ADJACENT TO an h5 */
 section#relational > h5 + p {
     text-decoration: line-through;
+}
+/* ul that is a sibling of h4 */
+h4~ul {
+    border: 1px solid black;
 }
 
 ul > li:first-child, ul > li:last-child {
