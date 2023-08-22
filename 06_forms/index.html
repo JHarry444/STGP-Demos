@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        /* form input, form label {
+            display: block;
+        } */
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>Login</h2>
+        <form action="/login">
+            <!-- inline-block elements don't start new lines -->
+            <fieldset>
+                <legend>User details</legend>
+                <label>Username:</label>
+                <!-- self closing tags have no content -->
+                <br>
+                <input type="text" name="username" value="root" required autofocus>
+                <br>
+                <label>Password:</label>
+                <br>
+                <input type="password" name="password" placeholder="Enter password here" required>
+                <br>
+            </fieldset>
+            <br>
+            <button type="reset">Reset</button>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+    <section>
+        <h2>Input types</h2>
+        <form>
+            <label>Birthday:</label>
+            <br>
+            <input type="date" name="bday">
+            <br>
+            <label>Country:</label>
+            <br>
+            <select name="country">
+                <option value="uk">United Kingdom</option>
+                <option value="us">United States</option>
+            </select>
+            <br>
+            <fieldset>
+                <!-- 'Title' describing what these inputs are for -->
+                <legend>Checkboxes</legend>
+                <label>Gender:</label>
+                <br>
+                <input type="radio" name="gender" value="M">M <input type="radio" name="gender" value="F">F <input
+                    type="radio" name="gender" value="Other">Other <br>
+                <label for="newsletterInput">Sign up for our newsletter:</label>
+                <input type="checkbox" name="newsletter" id="newsletterInput">
+            </fieldset>
+            <br>
+            <label for="ageInput">Age:</label>
+            <br>
+            <input type="number" name="age" id="ageInput" min="0" max="110">
+            <br>
+            <label for="moneyInput">Amount:</label>
+            <br>
+            <input type="number" name="amount" id="moneyInput" min="0" max="100" step="0.01">
+            <button>Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>
