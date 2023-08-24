@@ -82,11 +82,13 @@ if (x > 100 && x % 2 == 0) {
 }
 
 x = 200;
-200
+
 if (x > 100 && x % 2 == 0) {
     console.log("X is > 100 and even");
 }
+
 x = 50;
+
 if (x > 100 && x % 2 == 0) {
     console.log("X is > 100 and even");
 }
