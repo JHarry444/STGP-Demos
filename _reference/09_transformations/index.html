@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 50px;
+            height: 2em;
+            transition: height 0.5s, width 0.5s, background-color 0.5s, color 0.5s;
+            /* transition-delay: 0.5s;
+            transition-duration: 10s;
+            transition-property: width;
+            transition-timing-function: ease; */
+        }
+
+        button:hover {
+            width: 60px;
+            height: 2.5em;
+            color: white;
+            background-color: green;
+            border-color: black;
+        }
+
+        img {
+            /* transition: transform 2s; */
+            animation: moveit 2s infinite;
+            /* position: relative; */
+        }
+
+        img:hover {
+            /* transform: translate(50px, 0px); */
+            /* transform: scale(0.5, 0.5); */
+            /* transform: rotate(45deg); */
+            /* transform: skew(45deg); */
+            /* transform: rotate3d(1, 1, 1, 360deg); */
+        }
+
+        @keyframes moveit {
+            0% {
+
+            }
+            25% {
+                transform: translateX(100px);
+            }
+            50% {
+                transform: translate(100px, 100px);
+            }
+            75% {
+                transform: translateY(100px);
+            }
+            100% {
+
+            }
+        }
+
+        @keyframes spinner {
+            100% {
+                transform: rotate3d(1, 1, 1, 360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h2>Transitions</h2>
+            <form>
+                <fieldset>
+                    <label for="username">Username</label>
+                    <br>
+                    <input type="text">
+                    <br>
+                    <label for="username">Password</label>
+                    <br>
+                    <input type="password">
+                    <br>
+                    <br>
+                    <button>Login</button>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <h2>Transform</h2>
+            <img src="./me.png">
+        </section>
+    </main>
+</body>
+
+</html>
